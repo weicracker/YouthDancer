@@ -1,0 +1,631 @@
+@charset "UTF-8";
+/**
+ * Yo框架全局Variables
+ -----------------------
+ * Yo基础变量map，如果不想定义某属性，将其value设置为null；
+ * Yo仅使用2种长度单位：px用于边框，rem用于除边框之外的所有地方
+ *
+ * @class variables
+ * @module Yo
+ */
+/**
+ * Yo框架全局基础方法
+ -----------------------
+ * Yo内置了包括响应式方案，CSS3兼容性方案，厂商前缀方案，iconfont方案，flex布局等全局方法
+ *
+ * @class classes
+ * @module Yo
+ */
+/**
+ * 给需要的属性加厂家前缀
+ * @method prefix
+ * @param {String} $property 指定属性
+ * @param {String} $value 指定属性值
+ */
+/**
+ * 四则运算
+ * @method calc
+ * @param {String} $property 指定需要进行计算的CSS属性
+ * @param {String} $value 与原生CSS语法一致，使用方式如：@include calc(width, 100% - 0.1rem);
+ */
+/**
+ * 定义渐变色值
+ * @method gradient
+ * @param {String} $type 指定渐变的4种类型：linear, repeating-linear, radial, repeating-radial
+ * @param {String} $gradient 指定渐变取值，与w3c最新原生语法一致
+ */
+/**
+ * 定义响应式方案
+ * @method responsive
+ * @param {String} $media 指定媒体查询条件
+ */
+/**
+ * 定义字体图标
+ * @method yofont
+ */
+/**
+ * 滤镜
+ * @method filter
+ * @param {String} $filter 取值与原生语法一致
+ */
+/**
+ * 定义UA默认外观
+ * @method appearance
+ * @param {String} $appearance 指定UA外观类型
+ */
+/**
+ * 定义是否可以选中元素
+ * @method user-select
+ * @param {String} $user-select 指定是否可以选中
+ */
+/**
+ * 定义背景图像缩放（Android Browser2.3.*还需要厂商前缀）
+ * @method background-size
+ * @param {String | Length} $background-size 指定背景图缩放值
+ */
+/**
+ * 定义背景裁减（Android Browser2.3.*还需要厂商前缀）
+ * @method background-clip
+ * @param {String} $background-clip 指定背景图缩放值
+ */
+/**
+ * 定义背景显示区域（Android Browser2.3.*还需要厂商前缀）
+ * @method background-origin
+ * @param {String} $background-origin 指定背景图缩放值
+ */
+/**
+ * 定义盒模型
+ * @method box-sizing
+ * @param {String} $box-sizing 的2个值分别为：content-box(标准盒模型) | border-box(怪异盒模型)
+ */
+/**
+ * 定义圆角
+ * @method border-radius
+ * @param {String} $border-radius 取值与原生语法一致
+ */
+/**
+ * 定义简单变换
+ * @method transform
+ * @param {String} $transform 取值与原生语法一致
+ */
+/**
+ * 定义变换原点
+ * @method transform-origin
+ * @param {String} $transform-origin 取值与原生语法一致
+ */
+/**
+ * 定义动画
+ * @method animation
+ * @param {String} $animation 取值与原生语法一致
+ */
+/**
+ * 定义补间
+ * @method transition
+ * @param {String} $transition 取值与原生语法一致
+ */
+/**
+ * 定义显示类型为伸缩盒
+ * @method flexbox
+ * @param {String} $flexbox 默认值：flex，取值与最新原生语法一致
+ */
+/**
+ * 定义伸缩盒子元素如何分配空间
+ * @method flex
+ * @param {String} $flex 默认值：1，取值与最新原生语法一致
+ * @param {String} $direction 默认值: row
+ */
+/**
+ * 定义伸缩盒子元素的排版顺序
+ * @method order
+ * @param {String} $order 默认值：1，取值与最新原生语法一致
+ */
+/**
+ * 定义伸缩盒子元素的流动方向
+ * @method flex-direction
+ * @param {String} $flex-direction 默认值：row，取值与最新原生语法一致
+ */
+/**
+ * 定义伸缩盒子元素溢出排版
+ * @method flex-wrap
+ * @param {String} $flex-wrap 默认值：nowrap，取值与最新原生语法一致
+ */
+/**
+ * 定义伸缩盒子元素的水平对齐方式
+ * @method justify-content
+ * @param {String} $justify-content 默认值：center，取值与最新原生语法一致
+ */
+/**
+ * 定义伸缩盒子元素的垂直对齐方式
+ * @method align-items
+ * @param {String} $align-items 默认值：center，取值与最新原生语法一致
+ */
+/**
+ * 定义伸缩盒子元素自身的垂直对齐方式
+ * @method align-self
+ * @param {String} $align-self 默认值：center，取值与最新原生语法一致
+ */
+/**
+ * 定义root root-scroll
+ * @method root-scroll
+ * @param {String} $root-scroll 指定scroll类型，取值overflow属性的标准值
+ */
+/**
+ * 定义是否有滚动条
+ * @method overflow
+ * @param {String} $overflow 默认值：auto，取值与最新原生语法一致
+ */
+/**
+ * 生成矩形方法
+ * @method rect
+ * @param {Length} $width 定义矩形的长度
+ * @param {Length} $height 定义矩形的高度
+ */
+/**
+ * 生成正方形方法
+ * @method square
+ * @param {Length} $size 定义正方形的边长
+ */
+/**
+ * 生成圆形方法
+ * @method circle
+ * @param {Length} $size 定义圆的半径长度
+ * @param {Length} $radius 定义圆的圆角半径长度
+ */
+/**
+ * 生成全屏方法
+ * @method fullscreen
+ * @param {Integer} $z-index 定义层叠级别
+ */
+/**
+ * 清除浮动方案
+ * @method clearfix
+ */
+/**
+ * 链接处理方法
+ * @method link
+ * @param {Color} $color 定义链接颜色
+ */
+/**
+ * 强制换行方案
+ * @method wrap
+ */
+/**
+ * 单行文本溢出显示方案
+ * @method ellipsis
+ * @param {Boolen} $ellipsis 定义是否需要省略号
+ */
+/**
+ * 文字隐藏方案
+ * @method texthide
+ */
+/**
+ * 清除间隙方案-容器
+ * @method killspace
+ */
+/**
+ * 清除间隙方案-子级
+ * @method killspace-item
+ */
+/**
+ * 未知尺寸元素垂直居中解决方案-容器
+ * @method valign
+ */
+/**
+ * 未知尺寸元素垂直居中解决方案-子级
+ * @method valign-item
+ */
+/**
+ * 已经尺寸元素垂直居中解决方案
+ * @method alignment
+ * @param {Length} $width 居中元素的宽度
+ * @param {Length} $height 居中元素的高度
+ */
+/* border */
+#content #right .pic li p {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+body, div, p, ul, li, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, a, input, img {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border: 0px; }
+
+img {
+  display: inline-block;
+  border: 0px; }
+
+body {
+  font: 12px "微软雅黑";
+  background: #666; }
+
+a {
+  text-decoration: none;
+  color: #51b4bc; }
+
+@-webkit-keyframes myanimte {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-moz-keyframes myanimte {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@-ms-keyframes myanimte {
+  0% {
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg); }
+  100% {
+    -ms-transform: rotate(360deg);
+        transform: rotate(360deg); } }
+
+@-o-keyframes myanimte {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes myanimte {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+
+
+#main {
+  width: 1000px;
+  height: auto;
+  background: #c4d9da;
+  margin: 5px auto;
+  box-shadow: 0px 0px 8px #c4d9da;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+#content {
+  width: 965px;
+  height: 627px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  #content #left {
+    width: 212px;
+    height: 627px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    #content #left h1 {
+      width: 233px;
+      height: 160px;
+      position: relative; }
+      #content #left h1 img {
+        position: absolute;
+        left: -12px; }
+    #content #left form {
+      border-radius: 5px;
+      box-shadow: 0 0 5px #888;
+      position: relative;
+      width: 211px;
+      height: 117px;
+      background: url(../images/login.png) repeat-x; }
+      #content #left form p {
+        padding: 5px 15px; }
+        #content #left form p a.l {
+          text-decoration: underline; }
+        #content #left form p a {
+          color: #8fc31f; }
+      #content #left form tr {
+        width: 212px; }
+        #content #left form tr input {
+          border: 1px solid #b5b5b5;
+          width: 138px;
+          height: 16px; }
+        #content #left form tr span {
+          float: right; }
+      #content #left form div {
+        padding: 5px 15px;
+        line-height: 20px; }
+        #content #left form div #zou {
+          background: url(../images/zou.png);
+          width: 71px;
+          height: 27px;
+          color: #fff;
+          cursor: pointer; }
+    #content #left .swiper-container {
+      width: 211px;
+      height: 310px;
+      box-shadow: 0 0 3px #888;
+      border-radius: 5px; }
+  #content #right {
+    width: 752px;
+    height: 610px; }
+    #content #right .media {
+      width: 752px;
+      height: 125px;
+      position: relative; }
+      #bar{display: inline-block;width: 38px;height: 3px;background: #fff;margin-top: 3px;margin-left: 5px;position: relative;}
+      #sp{display: inline-block;height: 100%;width: 100%;background: skyblue;position: absolute;left: 0;top: 0;}
+      #ebtn{display: inline-block;position: absolute;width: 13px;height: 13px;background: url(../images/jin.png);top:-4px;left:36px;}
+      #content #right .media ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 10px;
+        width: 207px;
+        height: 20px;
+        background: url(../images/music.png);
+        box-shadow: 0 0 10px 1px #888;
+        position: absolute;
+        right: 10px;
+        top: 20px; }
+        #content #right .media ul li.li7 {
+          width: 70px;
+          height: 20px;
+          color: #fff; }
+        #content #right .media ul li img {
+          cursor: pointer; }
+        #content #right .media ul li i {
+          display: inline-block;
+          width: auto;
+          height: auto; }
+          #content #right .media ul li.li6 i{
+            display: flex;justify-content: space-between;align-content: center;
+          }
+        #content #right .media ul li span {
+          display: inline-block; }
+    #content #right .pic {
+      width: 730px;
+      height: 502px;
+      float: right;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
+      #content #right .pic li {
+        width: 176px;
+        height: 495px;
+        overflow: hidden;
+        background: url(../images/BG1.png);
+        padding: 13px;
+        position: relative; }
+        #content #right .pic li .p1 img {
+            -animation: myanimte 8s infinite linear;
+          // -webkit-transform: translate(-35px, 90px);
+          //     -ms-transform: translate(-35px, 90px);
+          //         transform: translate(-35px, 90px); 
+            position: absolute;
+            left: -35px;
+            top:90px;
+          }
+        #content #right .pic li .p2 img {
+        -animation: myanimte 8s infinite linear;
+          // -webkit-transform: translate(-46px, 7px);
+          //     -ms-transform: translate(-46px, 7px);
+          //         transform: translate(-46px, 7px);
+          position: absolute;
+            left: -46px;
+            top:7px;
+         }
+        #content #right .pic li .p3 img {
+       -animation: myanimte 8s infinite linear;
+          // -webkit-transform: translate(-305px, -80px);
+          //     -ms-transform: translate(-305px, -80px);
+          //         transform: translate(-305px, -80px);
+            position: absolute;
+            left: -305px;
+            top:-80px;
+                   }
+        #content #right .pic li .p4 img {
+        -animation: myanimte 8s infinite linear;
+          // -webkit-transform: translate(-8px, 47px);
+          //     -ms-transform: translate(-8px, 47px);
+          //         transform: translate(-8px, 47px); 
+            position: absolute;
+            left: -8px;
+            top:50px;
+                }
+        #content #right .pic li div {
+          width: 89px;
+          height: 91px;
+          background: url(../images/pic1.png) no-repeat;
+          position: absolute;
+          // -webkit-animation: myanimte 3s infinite linear;
+          //         animation: myanimte 3s infinite linear; 
+                }
+        #content #right .pic li span {
+          cursor: pointer;
+          width: 88px;
+          height: 28px;
+          display: block;
+          position: absolute;
+          background: url(../images/about.png);
+          -webkit-transition: .6s;
+          transition: .6s; }
+        #content #right .pic li .div1 {
+          top: 15px;
+          left: 40px; }
+        #content #right .pic li .div2 {
+          bottom: 10px;
+          left: 60px; }
+        #content #right .pic li .div3 {
+          top: 15px;
+          left: 40px; }
+        #content #right .pic li.li1 span:hover {
+          -webkit-transform: rotate(360deg);
+              -ms-transform: rotate(360deg);
+                  transform: rotate(360deg); }
+        #content #right .pic li.li2 span:hover{
+          transform:scale(1.3,1.3);
+        } 
+        #content #right .pic li.li3 span:hover{
+          transform:translateX(-10px);
+        } 
+        #content #right .pic li.li4 span em{
+          position: absolute;display: block;width: 88px;height:  80px;
+          border-left:1px solid #e3e3e3;
+          border-right:1px solid #e3e3e3;
+          top:-25px;
+          transform:scaleY(0);
+          transition:.5s;
+        } 
+        #content #right .pic li.li4 span i{
+          position: absolute;display: block;width: 136px;height: 28px;
+          border-top:1px solid #e3e3e3;
+          border-bottom:1px solid #e3e3e3;
+          left:-20px;
+          top:-2px;
+          transform:scaleX(0);
+          transition:.5s;
+        } 
+        #content #right .pic li.li4 span:hover em{
+          position: absolute;display: block;width: 88px;height: 80px;
+          border-left:1px solid #e3e3e3;
+          border-right:1px solid #e3e3e3;
+          transform:scaleY(1);
+        } 
+        #content #right .pic li.li4 span:hover i{
+          position: absolute;display: block;width: 136px;height: 28px;
+          border-top:1px solid #e3e3e3;
+          border-bottom:1px solid #e3e3e3;
+          left:-20px;
+          transform:scaleX(1);
+          top:-2px;
+        } 
+      #content #right .pic .li1 span {
+        top: 263px;
+        left: 47px; }
+      #content #right .pic .li2 span {
+        top: 200px;
+        left: 44px; }
+      #content #right .pic .li3 span {
+        top: 256px;
+        left: 46px; }
+      #content #right .pic .li4 span {
+        top: 315px;
+        left: 66px; }
+
+#nav {
+  width: 1000px;
+  height: 70px;
+  background: url(../images/a.png) repeat-x bottom;
+  position: relative; }
+  #nav #meun {
+    width: 500px;
+    height: 39px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #nav #meun li:nth-child(odd) {
+      width: 90px;
+      height: 39px;
+      text-align: center;
+      line-height: 39px; }
+    #nav #meun li:nth-child(even) {
+      width: 2px;
+      height: 30px;
+      background: url(../images/libg.png);
+      margin-top: 5px; }
+  #nav .peo {
+    width: 230px;
+    height: 70px;
+    position: absolute;
+    right: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    #nav .peo li {
+      height: 58px;
+      cursor: pointer;
+      -webkit-transition: .5s;
+      transition: .5s cubic-bezier(.75,1.75,.72,.26); }
+    #nav .peo li:nth-child(1) {
+      width: 28px;
+      background: url(../images/children.png) no-repeat left bottom; }
+    #nav .peo li:nth-child(2) {
+      width: 28px;
+      background: url(../images/children.png) no-repeat -35px bottom; }
+    #nav .peo li:nth-child(3) {
+      width: 32px;
+      background: url(../images/children.png) no-repeat -70px bottom; }
+    #nav .peo li:nth-child(4) {
+      width: 44px;
+      background: url(../images/children.png) no-repeat -106px bottom; }
+    #nav .peo li:nth-child(5) {
+      width: 32px;
+      background: url(../images/children.png) no-repeat -154px bottom; }
+    #nav .peo li:nth-child(6) {
+      width: 28px;
+      background: url(../images/children.png) no-repeat -191px bottom; }
+
+#footer {
+  height: 73px;
+  width: 100%;
+  background: url(../images/btm.png) no-repeat;
+  background-size: cover; }
